@@ -1,0 +1,343 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.jumbotron {
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.jumbotron h1 {
+  margin: 0 auto;
+  font-size: 64px;
+  font-weight: 200;
+  color:#333;
+  text-align: center;
+}
+
+.marketing {
+  position:relative;
+  text-align:center;
+  padding:59px 60px !important;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.menu-maps {
+  height: 100px;
+  text-align: center;
+  background-color: #096CC4;
+}
+
+.button-menu {
+  border: none;
+  width: 65px;
+  height: 65px;
+  padding: 2px 2px;
+  cursor: pointer;
+  margin: 15px 15px;
+}
+
+#refresh-pressure {
+  background: url('images/icon-pressure.png') no-repeat top left;
+}
+#refresh-pressure:hover, #refresh-pressure:focus {
+  border-bottom: rgb(160,160,255) solid 1px;
+}
+
+#refresh-heart {
+  background: url('images/icon-heart.png') no-repeat top left;
+}
+
+#refresh-heart:hover, #refresh-heart:focus {
+  border-bottom: rgb(160,160,255) solid 1px;
+}
+
+#refresh-temperature {
+  background: url('images/icon-temperature.png') no-repeat top left;
+}
+
+#refresh-temperature:hover, #refresh-temperature:focus {
+  border-bottom: rgb(160,160,255) solid 1px;
+}
+
+#refresh-spo2 {
+  background: url('images/icon-spo2.png') no-repeat top left;
+}
+#refresh-spo2:hover, #refresh-spo2:focus {
+  border-bottom: rgb(160,160,255) solid 1px;
+}
+
+
+.datamap-area {
+    text-align: center;
+    width: 100%;
+    height: 850px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.jnc {
+  background-color: white;
+  color: #8699a4;
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.jnc span, .tooltip-span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0 3px;
+  margin: 0 4px;
+}
+
+.jnc #red, .tooltip-red {
+  background-color: #F62255;
+  color: #F62255;
+  border: 1px solid #A51115;
+}
+
+.jnc #green, .tooltip-green {
+  background-color: #07D311;
+  color: #07D311;
+  border: 1px solid #009944;
+}
+
+.jnc #yellow, .tooltip-yellow {
+  background-color: #F6EA16;
+  color: #F6EA16;
+  border: 1px solid #B9B010;
+}
+
+.jnc #orange, .tooltip-orange {
+  background-color: #F6B216;
+  color: #F6B216;
+  border: 1px solid #F7941E;
+}
+
+.table-measures {
+  width: 320px;
+  text-align: left;
+}
+.table-measures th {
+  text-align: left;
+}
+.table-measures tr {
+  border-bottom: 1px solid #CCCCCC;
+}
+.table-measures td {
+   padding-top: 5px;;
+}
+
+@media only screen
+  and (min-device-width: 376px)
+  and (max-device-width: 667px)
+  and (orientation : portrait) {
+
+  .container {
+    width: 100% !important;
+  }
+
+  .button-menu {
+    background-size: 40px 40px !important;
+    margin-top: 30px !important;
+    padding: 0 !important;
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-maps {
+    vertical-align: middle;
+    line-height: 45px !important;
+  }
+
+  .data-map {
+    width: 370px;
+    height: 600px;
+    background-color: white;
+  }
+
+  #container-map {
+    width: 370px;
+    height: 600px;
+  }
+
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 375px)
+and (orientation : portrait) {
+
+  .container {
+    width: 100% !important;
+  }
+
+  .button-menu {
+    background-size: 29px 29px !important;
+    margin-top: 35px !important;
+    padding: 0 !important;
+    width: 29px;
+    height: 29px;
+  }
+
+  .menu-maps {
+    vertical-align: middle;
+    line-height: 35px !important;
+  }
+
+  #logo-map {
+    width: 50%;
+  }
+
+  .data-map {
+    width: 375px;
+    height: 400px;
+
+    background-color: white;
+  }
+
+  #container-map {
+    width: 375px;
+    height: 400px;
+  }
+}
+
+.data-map {
+  color: #195f91;
+  width: 1000px;
+  height: 600px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#container-map {
+  height: 600px;
+  width: 1000px;
+  position: relative;
+}
+/*SVG MAP*/
+
+#gbr-svg {
+  position:absolute !important;
+  box-sizing: border-box;
+  transform:scale(.6) translate(-60%, 0);
+  margin-top:-250px;
+  margin-left:-160px;
+}
+
+#canada-svg {
+  position:absolute !important;
+  box-sizing: border-box;
+  transform:scale(.5) translate(-50%, 0);
+  margin-top:-322px;
+  margin-left:-750px;
+}
+
+#svg-aus .state {
+  stroke-width: 0.5px;
+  -webkit-transition: stroke 0.5s, stroke-width 0.5s;
+  -o-transition: stroke 0.5s, stroke-width 0.5s;
+  transition: stroke 0.5s, stroke-width 0.5s;
+  fill: red;
+}
+
+#svg-aus .state:hover {
+  stroke-width: 0;
+
+}
+
+#canada-svg .state {
+  stroke: #838383;
+  fill: #999999;
+  stroke.width: 1px;
+}
+
+
+
+svg .state {
+  stroke-width: 1px;
+  stroke: #dbdbdb;
+  fill: rgb(244, 244, 244) !important;
+  -webkit-transition: stroke 0.5s, stroke-width 0.5s;
+  -o-transition: stroke 0.5s, stroke-width 0.5s;
+  transition: stroke 0.5s, stroke-width 0.5s;
+}
+
+svg .state:hover {
+  stroke-width: 0;
+  fill: #096CC4 !important;
+}
+
+.subunit-boundary {
+  fill: none;
+}
+
+.subunit.SCT { fill: #f4f4f4; stroke: #dbdbdb; stroke-width:1px;}
+.subunit.WLS { fill: #f4f4f4; stroke: #dbdbdb; stroke-width:1px;}
+.subunit.NIR { fill: #f4f4f4; stroke: #dbdbdb; stroke-width:1px;}
+.subunit.ENG { fill: #f4f4f4; stroke: #dbdbdb; stroke-width:1px;}
+.subunit.IRL { display: none; stroke: #dbdbdb; stroke-width:1px;}
+
+.hoverinfo {
+  background-color:rgba(255,255,255,0.6) !important;
+}
+.hoverinfo h2{
+    color: #494e51 !important;
+}
+
+svg .state-yellow {
+  fill:#F6EA16 !important;
+  stroke-width: 1px;
+  stroke: #dbdbdb !important;
+  position:relative;
+  -webkit-transition: stroke 0.5s, stroke-width 0.5s;
+  -o-transition: stroke 0.5s, stroke-width 0.5s;
+  transition: stroke 0.5s, stroke-width 0.5s;
+}
+
+svg .state-orange {
+  fill:#F6B216 !important;
+  stroke-width: 1px;
+  stroke: #dbdbdb !important;
+  position:relative;
+  -webkit-transition: stroke 0.5s, stroke-width 0.5s;
+  -o-transition: stroke 0.5s, stroke-width 0.5s;
+  transition: stroke 0.5s, stroke-width 0.5s;
+}
+
+svg .state-green {
+  fill:#07D311 !important;
+  stroke-width: 1px;
+  stroke: #dbdbdb !important;
+  position:relative;
+  -webkit-transition: stroke 0.5s, stroke-width 0.5s;
+  -o-transition: stroke 0.5s, stroke-width 0.5s;
+  transition: stroke 0.5s, stroke-width 0.5s;
+}
+
+svg .state-red {
+  fill:#F62255 !important;
+  stroke-width: 1px;
+  stroke: #dbdbdb !important;
+  position:relative;
+  -webkit-transition: stroke 0.5s, stroke-width 0.5s;
+  -o-transition: stroke 0.5s, stroke-width 0.5s;
+  transition: stroke 0.5s, stroke-width 0.5s;
+}
+
+svg .tooltip {
+  position:absolute;
+  width:200px;
+  height:20px;
+}

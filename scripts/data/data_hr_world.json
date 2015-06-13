@@ -1,0 +1,4 @@
+process_hr_world_data({'AUS' :{'fillKey':'GREEN','numberOfThings':68},
+'BEL' :{'fillKey':'GREEN','numberOfThings':234},
+'CAN' :{'fillKey':'GREEN','numberOfThings':262},
+'CYP' :{'fillKey':'GREEN','numberOfThings':11}});

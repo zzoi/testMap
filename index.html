@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Scanadu Data Map</title>
+    <meta name="description" content="Global Body Map">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/globe.css">
+    <link rel="stylesheet" href="styles/odometer-theme-train-station.css">
+    <link rel="stylesheet" href="styles/explore.css">
+    <link rel="stylesheet" href="styles/online-page.css">
+
+
+    <!--Globe Map-->
+    <script src="scripts/js/jquery.min.js"></script>
+    <script src="scripts/js/TweenMax.min.js"></script>
+    <script src="scripts/js/underscore-min.js"></script>
+    <script src="scripts/js/system.min.js"></script>
+    <script src="scripts/js/three56.js"></script>
+    <script src="scripts/js/tween.js"></script>
+    <script src="scripts/js/eventsourcePollyfill.js"></script>
+    <script src="scripts/js/orbital.js"></script>
+    <script src="scripts/js/util.js"></script>
+    <script src="scripts/js/geoutil.js"></script>
+    <script src="scripts/js/point.js"></script>
+    <script src="scripts/js/globe.js"></script>
+    <script src="scripts/js/odometer.js"></script>
+
+
+    <!-- Data Maps -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+
+
+
+
+  </head>
+  <body ng-app="mapDataScanaduApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Load views -->
+    <div id="globe">
+      <div ng-view=""></div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/topojson/topojson.js"></script>
+    <script src="bower_components/datamaps/dist/datamaps.all.js"></script>
+    <script src="bower_components/angular-datamaps/dist/angular-datamaps.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+     <script src="scripts/js/angular-datamaps.min.js"></script>
+      <script src="scripts/js/datamaps.all.min.js"></script>
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/mapFactory.js"></script>
+    <script src="scripts/directives/su-explore-map.js"></script>
+    <script src="scripts/directives/tooltip-template.js"></script>
+    <script src="scripts/controllers/globe-map.js"></script>
+    <!-- endbuild -->
+    <!-- endbuild -->
+
+    <script src="scripts/controllers/explore-map.js"></script>
+</body>
+</html>

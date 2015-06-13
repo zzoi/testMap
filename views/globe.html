@@ -1,0 +1,145 @@
+<div class="fadeOutMap container globe-container">
+  <header class="main-header">
+      <div class="inner">
+        <a href="#/"><h1 class="logo">Scanadu</h1></a>
+      </div>
+  </header>
+  <div class="header-spacer"></div>
+  <figcaption class="animated fadeInDown inner">
+    <div class="globe-title">
+      <h2>
+        The Global Body Map show anonymized data from thousands of Scanadu Scout™ holders scanning their vital signs.
+      </h2>
+      <h1>
+        So far, there are
+        <div id="odometer" class="odometer_txt odometer odometer-theme-train-station"></div>
+        data points.
+      <h1>
+    </div>
+  </figcaption>
+  <div id="container-canvas">
+  </div>
+  <hr/>
+  <div id="scans-world">
+    <h2>Most recent scans in the world</h2>
+    <div id="data-points">
+      <div class="data-country" ng-repeat="location in vm.scanLocations track by $index">{{location}}</div>
+    </div>
+  </div>
+  <div class="container" ng-controller="ExploreMap as map">
+    <div class="jumbotron">
+      <section class="description clearfix">
+        <div class="inner">
+          <h2>
+            <span class="animated fadeInDown">This view of the Global Body Map allows you to drill down by individual vital signs to the country and state level.</span>
+          </h2>
+        </div>
+      </section>
+    </div>
+    <div class="menu-maps">
+      <button class="button-menu animated zoomIn" id="refresh-pressure" ng-click="map.changeDataPressure()"></button>
+      <button class="button-menu animated zoomIn" id="refresh-heart" ng-click="map.changeDataHeart()"></button>
+      <button class="button-menu animated zoomIn" id="refresh-temperature" ng-click="map.changeDataTemperature()"></button>
+      <button class="button-menu animated zoomIn" id="refresh-spo2" ng-click="map.changeDataSpo2()"></button>
+    </div>
+    <div class="datamap-area">
+      <div class="data-map">
+        <su-explore-map id="container-map" su-world-data="map.colorDataMap" su-states="map.states"></su-explore-map>
+      </div>
+      <div class="jnc">
+        <table class="table-measures">
+          <tr>
+            <th><h3>{{map.titleMap}}</h3></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr ng-repeat="row in map.tableData">
+            <td><h4>{{row.title}}</h4></td>
+            <td>{{row.col1}}</td>
+            <td>{{row.col2}}</td>
+            <td><span class="jnc" id="{{row.color}}">N</span></td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+  </div>
+  <footer class="main-footer">
+    <div class="inner">
+      <h1 id="subscribe" class="main-footer-title">Isn't it time to be more informed?</h1>
+      <form class="subscribe" action="https://simplesender.createsend.com/t/y/s/mdrkdk/" method="post" id="subForm">
+        <input type="email" placeholder="Enter your email address here" name="cm-mdrkdk-mdrkdk" id="mdrkdk-mdrkdk">
+        <input type="submit" name="submit" value="Subscribe">
+      </form>
+      <p class="message"></p>
+      <ul class="footer-links clearfix">
+        <li>
+          <h4>Address</h4>
+          <p>NASA Ames Research Park
+            <br/>
+            Building 20, Second Floor
+            <br/>
+            Moffett Field, CA  94035
+          </p>
+        </li>
+        <li>
+          <h4>Info</h4>
+          <a href="mailto:info@scanadu.com">
+            Email
+            <span class="arrow"></span>
+            info@scanadu.com
+          </a>
+          <br/>
+          <a href="https://www.scanadu.com/FAQ">
+            Scanadu Scout Indiegogo Campaign
+            <span class="arrow"></span>
+            FAQ
+          </a>
+        </li>
+        <li>
+          <h4>Press</h4>
+          <a href="mailto:story@scanadu.com">
+            Email
+            <span class="arrow"></span>
+            story@scanadu.com
+          </a>
+          <br/>
+          <a href="https://www.scanadu.com/pr">Media Center</a>
+          <br/>
+          <a href="https://www.scanadu.com/press_mentions">In the News</a>
+        </li>
+        <li>
+          <h4>Jobs</h4>
+          <a href="http://scanadu.theresumator.com/apply" target="_blank">
+            Apply Here
+            <span class="arrow"></span>
+          </a>
+        </li>
+      </ul>
+      <section class="very-bottom clearfix">
+        <ul class="colophon clearfix">
+          <li>Made in California, USA</li>
+          <li>
+            <ul>
+              <li>
+                <a href="https://www.scanadu.com/terms-conditions">Terms & Conditions</a>
+              </li>
+              <li>
+                <a href="https://www.scanadu.com/privacy">Privacy</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="social">
+          <li>
+            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/follow_button.50005fe33691ad15041f7199457ac3e0.en.html#_=1432661084653&amp;dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=scanadu&amp;show_count=false&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="position: static; visibility: visible; width: 115px; height: 20px;"></iframe>
+          </li>
+          <li>
+            <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/Scanadu" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;font=arial&amp;href=https%3A%2F%2Fwww.facebook.com%2FScanadu&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450"><span style="vertical-align: bottom; width: 83px; height: 20px;"><iframe name="f3a6f564e8" width="450px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?app_id=&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FQrU_tEEWym9.js%3Fversion%3D41%23cb%3Df3cca7df7c%26domain%3Dwww.scanadu.com%26origin%3Dhttps%253A%252F%252Fwww.scanadu.com%252Ff3343db018%26relation%3Dparent.parent&amp;container_width=0&amp;font=arial&amp;href=https%3A%2F%2Fwww.facebook.com%2FScanadu&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; visibility: visible; width: 83px; height: 20px;" class=""></iframe></span></div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+</div>

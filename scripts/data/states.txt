@@ -1,0 +1,75 @@
+{
+  "USA": {
+
+      "AZ": {
+            "fillKey": "RED",
+            "temperature": 5
+        },
+        "CO": {
+            "fillKey": "GREEN",
+            "temperature": 5
+        },
+        "DE": {
+            "fillKey": "GREEN",
+            "temperature": 32
+        },
+        "FL": {
+            "fillKey": "YELLOW",
+            "temperature": 29
+        }
+   },
+  "AUS" : {
+        "NS": {
+              "fillKey": "ORANGE",
+              "temperature": 5
+          },
+          "QL": {
+              "fillKey": "RED",
+              "temperature": 5
+          },
+          "TS": {
+              "fillKey": "GREEN",
+              "temperature": 32
+          },
+          "VI": {
+              "fillKey": "GREEN",
+              "temperature": 29
+          }
+     },
+     "CAN" : {
+          "AB": {
+               "fillKey": "YELLOW",
+               "temperature": 5
+           },
+           "BC": {
+               "fillKey": "ORANGE",
+               "temperature": 5
+           },
+           "MB": {
+               "fillKey": "GREEN",
+               "temperature": 32
+           },
+           "NL": {
+               "fillKey": "RED",
+               "temperature": 29
+           }
+     },
+     "ENG" : {
+          "AB": {
+               "fillKey": "YELLOW",
+               "temperature": 5
+           },
+           "BC": {
+               "fillKey": "ORANGE",
+               "temperature": 5
+           },
+           "MB": {
+               "fillKey": "GREEN",
+               "temperature": 32
+           },
+           "NL": {
+               "fillKey": "RED",
+               "temperature": 29
+           }
+     }
+}

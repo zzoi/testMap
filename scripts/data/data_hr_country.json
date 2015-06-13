@@ -1,0 +1,59 @@
+process_hr_country_data({"null":{"null":{ "fillKey":"GREEN","temperature":"2128"}
+},"AUS": {"NSW":{"fillKey":"GREEN","temperature":"37"}
+,"VIC":{"fillKey":"GREEN","temperature":"31"}
+},"CAN": {"AB":{"fillKey":"YELLOW","temperature":"27"}
+,"BC":{"fillKey":"GREEN","temperature":"51"}
+,"ON":{"fillKey":"GREEN","temperature":"157"}
+,"QC":{"fillKey":"YELLOW","temperature":"37"}
+},"GBR": {"SC":{"fillKey":"GREEN","temperature":"24"}
+},"NLD": {"GE":{"fillKey":"GREEN","temperature":"132"}
+,"LI":{"fillKey":"GREEN","temperature":"23"}
+,"NB":{"fillKey":"GREEN","temperature":"122"}
+,"NH":{"fillKey":"GREEN","temperature":"238"}
+,"OV":{"fillKey":"YELLOW","temperature":"27"}
+,"UT":{"fillKey":"GREEN","temperature":"101"}
+,"ZH":{"fillKey":"GREEN","temperature":"123"}
+},"USA": {"AL":{"fillKey":"GREEN","temperature":"60"}
+,"AR":{"fillKey":"YELLOW","temperature":"54"}
+,"AZ":{"fillKey":"GREEN","temperature":"126"}
+,"CA":{"fillKey":"GREEN","temperature":"1765"}
+,"CO":{"fillKey":"GREEN","temperature":"124"}
+,"CT":{"fillKey":"GREEN","temperature":"56"}
+,"DC":{"fillKey":"GREEN","temperature":"68"}
+,"FL":{"fillKey":"GREEN","temperature":"224"}
+,"GA":{"fillKey":"GREEN","temperature":"75"}
+,"HI":{"fillKey":"GREEN","temperature":"13"}
+,"IA":{"fillKey":"GREEN","temperature":"125"}
+,"ID":{"fillKey":"GREEN","temperature":"19"}
+,"IL":{"fillKey":"GREEN","temperature":"153"}
+,"IN":{"fillKey":"GREEN","temperature":"95"}
+,"KS":{"fillKey":"GREEN","temperature":"13"}
+,"KY":{"fillKey":"GREEN","temperature":"14"}
+,"LA":{"fillKey":"GREEN","temperature":"20"}
+,"MA":{"fillKey":"GREEN","temperature":"229"}
+,"MD":{"fillKey":"GREEN","temperature":"115"}
+,"ME":{"fillKey":"GREEN","temperature":"30"}
+,"MI":{"fillKey":"GREEN","temperature":"135"}
+,"MN":{"fillKey":"GREEN","temperature":"126"}
+,"MO":{"fillKey":"GREEN","temperature":"53"}
+,"NC":{"fillKey":"GREEN","temperature":"202"}
+,"ND":{"fillKey":"GREEN","temperature":"11"}
+,"NE":{"fillKey":"GREEN","temperature":"24"}
+,"NH":{"fillKey":"YELLOW","temperature":"37"}
+,"NJ":{"fillKey":"GREEN","temperature":"93"}
+,"NM":{"fillKey":"GREEN","temperature":"24"}
+,"NV":{"fillKey":"GREEN","temperature":"30"}
+,"NY":{"fillKey":"GREEN","temperature":"502"}
+,"OH":{"fillKey":"GREEN","temperature":"94"}
+,"OK":{"fillKey":"GREEN","temperature":"18"}
+,"OR":{"fillKey":"GREEN","temperature":"80"}
+,"PA":{"fillKey":"GREEN","temperature":"107"}
+,"SC":{"fillKey":"GREEN","temperature":"19"}
+,"TN":{"fillKey":"GREEN","temperature":"19"}
+,"TX":{"fillKey":"GREEN","temperature":"394"}
+,"UT":{"fillKey":"YELLOW","temperature":"49"}
+,"VA":{"fillKey":"GREEN","temperature":"88"}
+,"VT":{"fillKey":"GREEN","temperature":"11"}
+,"WA":{"fillKey":"GREEN","temperature":"281"}
+,"WI":{"fillKey":"GREEN","temperature":"46"}
+,"WV":{"fillKey":"YELLOW","temperature":"10"}}});
